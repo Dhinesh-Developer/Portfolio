@@ -1,0 +1,8 @@
+{
+    "project_id": "DhineshDeveloper",
+    "features": {
+        "functions": true,
+        "client": true,
+        "advanced_io": true
+    }
+}

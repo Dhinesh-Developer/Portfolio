@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievements - DHINESHKUMAR</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #141414;
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #141414;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        nav a {
+            color: #e50914;
+            font-family: 'Bebas Neue', cursive;
+            letter-spacing: 1px;
+        }
+
+        nav a:hover {
+            color: gainsboro;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 2rem;
+            font-weight: bold;
+            color: lightseagreen;
+        }
+
+        .achievement-section {
+            padding: 60px 20px;
+            background-color: #222;
+        }
+
+        .achievement-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .achievement-card {
+            background-color: #333;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            flex: 1 1 calc(33.333% - 20px);
+            max-width: calc(33.333% - 20px);
+        }
+
+        .achievement-card img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: whitesmoke;
+            margin-bottom: 10px;
+        }
+
+        .card-body p {
+            margin: 0;
+        }
+
+        footer {
+            background-color: #141414;
+            color: whitesmoke;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            .achievement-card {
+                flex: 1 1 calc(50% - 20px);
+                max-width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 576px) {
+            .achievement-card {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-content, .profile-section {
+                max-width: 100%;
+                text-align: center;
+            }
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+            .profile-section {
+                flex-direction: column;
+                align-items: center;
+            }
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .hero p {
+                font-size: 1.2rem;
+            }
+            .profile-img {
+                width: 150px;
+                height: 150px;
+            }
+            .hero-buttons {
+                flex-direction: row;
+                justify-content: center;
+                gap: 20px;
+            }
+            .hero-buttons .btn {
+                margin: 5px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            .profile-img {
+                width: 120px;
+                height: 120px;
+            }
+            .about-me h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="https://github.com/Dhinesh-Developer">DHINESHKUMAR M</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="dk.html">About Me</a></li>
+                <li class="nav-item"><a class="nav-link" href="projectdk.html">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="Skills.html">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="achieve.html">Achievements</a></li>
+                <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+                <li class="nav-item"><a class="nav-link" href="HI.html">Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Achievements Section -->
+<section class="achievement-section">
+    <h2 class="section-title">My Achievements</h2>
+    <div class="container">
+        <div class="achievement-container">
+            <!-- Achievement 1 -->
+            <div class="achievement-card">
+                <img src="11.jpg" alt="11th School First Rank">
+                <div class="card-title">11th School First Rank</div>
+                <div class="card-body">
+                    <p>Govt Higher Secondary School, Kakapalayam, Salem, Tamil Nadu (2021-2022).</p>
+                    <p>Secured the first rank in my 11th grade with exceptional performance and dedication.</p>
+                </div>
+            </div>
+
+            <!-- Achievement 2 -->
+            <div class="achievement-card">
+                <img src="12th.jpg" alt="12th School First Rank">
+                <div class="card-title">12th School First Rank</div>
+                <div class="card-body">
+                    <p>Govt Higher Secondary School, Kakapalayam, Salem, Tamil Nadu (2022-2023).</p>
+                    <p>Secured first rank in 12th grade, demonstrating consistent hard work and commitment to my studies.</p>
+                </div>
+            </div>
+
+            <!-- Achievement 3 -->
+            <div class="achievement-card">
+                <img src="12.jpg" alt="12th Maths First Mark">
+                <div class="card-title">12th Maths School First Mark</div>
+                <div class="card-body">
+                    <p>Govt Higher Secondary School, Kakapalayam, Salem, Tamil Nadu (2023).</p>
+                    <p>Scored 94/100 in one of the toughest maths exams during the 12th public examination.</p>
+                </div>
+            </div>
+
+            <!-- Achievement 4 -->
+            <div class="achievement-card">
+                <img src="kongu.jpg" alt="2nd Prize in IPL Auction">
+                <div class="card-title">2nd Prize in IPL Auction</div>
+                <div class="card-body">
+                    <p>Kongu Engineering College, Perundurai, Erode, Tamil Nadu (2024).</p>
+                    <p>Won the 2nd prize in the IPL Auction event, showcasing my strategic thinking and knowledge of the game.</p>
+                </div>
+            </div>
+
+            <!-- Achievement 5 -->
+            <div class="achievement-card">
+                <img src="excellence.jpg" alt="Outstanding Performance Award">
+                <div class="card-title">Outstanding Performance Award</div>
+                <div class="card-body">
+                    <p><span class="college-name">Knowledge Institute of Technology</span>, Kakapalayam, Salem, Tamil Nadu (2023-2027).</p>
+                    <p>Recognized for exceptional academic performance during my time at Knowledge Institute of Technology.</p>
+                </div>
+            </div>
+
+            <!-- Achievement 6 -->
+            <div class="achievement-card">
+                <img src="kongu2.jpg" alt="Paper Presentation Certifications">
+                <div class="card-title">Paper Presentation Certifications</div>
+                <div class="card-body">
+                    <ul>
+                        <li><span class="college-name">Kongu Engineering College</span>, Perundurai, Erode, Tamil Nadu (2024) - Paper Presentation.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="achievement-card">
+                <img src="amirtha.jpg" alt="Paper Presentation Certifications">
+                <div class="card-title">Paper Presentation Certifications</div>
+                <div class="card-body">
+                    <ul>
+                        <li><span class="college-name">Amrita Vishwa Vidyapeetham</span>, Coimb
+                            ar, Coimbatore, Tamil Nadu (2024) - Paper Presentation.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="achievement-card">
+                <img src="guvi.jpg" alt="Paper Presentation Certifications">
+                <div class="card-title">Guvi Learnathon</div>
+                <div class="card-body">
+                    <ul>
+                        <li><span class="college-name">Learnathon (GUVI)</span>
+                           </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 DHINESHKUMAR. All rights reserved.</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+    </html>
+    

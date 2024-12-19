@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - DHINESHKUMAR</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #141414;
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #141414;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        nav a {
+            color: whitesmoke;
+            font-family: 'Bebas Neue', cursive;
+            letter-spacing: 1px;
+        }
+        nav a:hover {
+            color: #fff;
+        }
+        .projects-section {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: #222;
+        }
+        .projects-section h2 {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .project-item {
+            background-color: #333;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        .project-item h4 {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .project-item p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        .project-item .details {
+            display: none;
+            background-color: #444;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 8px;
+        }
+        .project-item .details a {
+            color: lightskyblue;
+            text-decoration: none;
+        }
+        .project-item .details a:hover {
+            color: lightskyblue;
+        }
+        footer {
+            background-color: #000;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .projects-section {
+                padding: 40px 10px;
+            }
+            .projects-section h2 {
+                font-size: 2rem;
+            }
+            .projects-section .project-item h4 {
+                font-size: 1.3rem;
+            }
+            .projects-section .project-item p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="https://github.com/Dhinesh-Developer">DHINESHKUMAR M</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="dk.html">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projectdk.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Skills.html">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="achieve.html">Achievements</a></li>
+                    <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="HI.html">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!-- Projects Section -->
+<section id="projects" class="projects-section">
+    <h2>My Projects</h2>
+
+    <!-- Project 1: FoodApp_DK -->
+<div class="project-item">
+    <h4>FoodApp_DK</h4>
+    <p>A digital platform to explore various restaurants, menus, and place orders, offering a smooth user experience.</p>
+    <button class="btn btn-primary" onclick="toggleDetails('foodApp')">Know More</button>
+    <div class="details" id="foodApp">
+        <p><strong>GitHub:</strong> <a href="https://github.com/Dhinesh-Developer/Food_App_DD/tree/main" target="_blank">GitHub Repo</a></p>
+        <p><strong>YouTube Link:</strong> <a href="https://www.youtube.com/watch?v=3KM3AmAcO84" target="_blank">Watch Here</a></p>
+        <p><strong>Host Link:</strong> <a href="https://www.youtube.com/watch?v=3KM3AmAcO84" target="_blank">Not yet Hosted</a></p>
+        <button class="btn btn-info" onclick="toggleDescription('foodAppDescription')">Description</button>
+        <div id="foodAppDescription" style="display: none; margin-top: 10px;">
+            <div class="container mt-5">
+                <h1 class="text-center mb-4">Last Try Food App</h1>
+                
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Project Overview -->
+                        <tr>
+                            <td><strong>Project Overview</strong></td>
+                            <td>The Last Try Food App is a full-stack web application designed to replicate the core functionalities of popular food delivery platforms like Swiggy. It provides users with a seamless experience for browsing restaurants, exploring menus, placing orders, and tracking food deliveries. The application is built using modern web technologies including HTML, CSS, JavaScript, Bootstrap, J2EE, JSP, JDBC, and MySQL.</td>
+                        </tr>
+                        
+                        <!-- Key Features -->
+                        <tr>
+                            <td><strong>Key Features</strong></td>
+                            <td>
+                                <ul>
+                                    <li><strong>User-Friendly Interface:</strong> Built with HTML, CSS, JavaScript, and Bootstrap for a responsive design.</li>
+                                    <li><strong>Backend Functionality:</strong> Java Servlets and JSP for real-time dynamic content rendering.</li>
+                                    <li><strong>Database Management:</strong> Uses MySQL for storing user data, restaurant information, menu details, and order history.</li>
+                                    <li><strong>Admin Dashboard:</strong> Allows admins to manage restaurant data, menu items, and user information.</li>
+                                    <li><strong>Interactive UI:</strong> Smooth animations and cross-device compatibility.</li>
+                                    <li><strong>Authentication System:</strong> Secure user registration, login, and error handling.</li>
+                                    <li><strong>Add to Cart & Payment:</strong> Users can add items to the cart and proceed to payment.</li>
+                                    <li><strong>Order History Tracking:</strong> Users can view and track past orders.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        
+                        <!-- Tech Stack -->
+                        <tr>
+                            <td><strong>Tech Stack</strong></td>
+                            <td>
+                                <ul>
+                                    <li><strong>Frontend:</strong> HTML, CSS, JavaScript, Bootstrap.</li>
+                                    <li><strong>Backend:</strong> Java (J2EE), Servlets, JSP, JDBC.</li>
+                                    <li><strong>Database:</strong> MySQL for relational data storage.</li>
+                                </ul>
+                            </td>
+                        </tr>
+
+                        <!-- How It Works -->
+                        <tr>
+                            <td><strong>How It Works</strong></td>
+                            <td>
+                                <ul>
+                                    <li><strong>Homepage:</strong> Displays featured restaurants, reviews, and quotes with easy navigation.</li>
+                                    <li><strong>Restaurant Page:</strong> Displays restaurant information with a card layout.</li>
+                                    <li><strong>Menu Page:</strong> Lists menu items with prices and quantities to add to the cart.</li>
+                                    <li><strong>Cart and Payment:</strong> Users view their cart, total price, and proceed to checkout.</li>
+                                    <li><strong>Order History:</strong> Displays past order details including restaurant name and total spent.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        
+                        <!-- Database Structure -->
+                        <tr>
+                            <td><strong>Database Structure</strong></td>
+                            <td>
+                                <ul>
+                                    <li><strong>Users Table:</strong> userId, name, username, password, email, phone, address, role, createdDate.</li>
+                                    <li><strong>Restaurants Table:</strong> restaurantId, restaurantName, address, rating, eta, imagePath.</li>
+                                    <li><strong>Menu Table:</strong> menuId, restaurantId (foreign key), itemName, price, ratings, isAvailable.</li>
+                                    <li><strong>Order Table:</strong> orderId, userId (foreign key), restaurantId, totalAmount, orderDate.</li>
+                                </ul>
+                            </td>
+                        </tr>
+
+                        <!-- GitHub Repository -->
+                        <tr>
+                            <td><strong>GitHub Repository</strong></td>
+                            <td><a href="https://github.com/Dhinesh-Developer/Food_App_DD/tree/main" target="_blank">View the source code on GitHub</a></td>
+                        </tr>
+
+                        <!-- YouTube Demo -->
+                        <tr>
+                            <td><strong>Live Demo on YouTube</strong></td>
+                            <td><a href="https://www.youtube.com/watch?v=3KM3AmAcO84" target="_blank">Watch the full walkthrough on YouTube</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleDetails(projectId) {
+        const details = document.getElementById(projectId);
+        details.style.display = (details.style.display === "none" || details.style.display === "") ? "block" : "none";
+    }
+
+    function toggleDescription(descriptionId) {
+        const description = document.getElementById(descriptionId);
+        description.style.display = (description.style.display === "none" || description.style.display === "") ? "block" : "none";
+    }
+</script>
+
+
+    <!-- Project: Dhinesh Developer Electronics App -->
+<div class="project-item">
+    <h4>Dhinesh Developer Electronics App</h4>
+    <p>Welcome to Dhinesh Developer, an innovative electronics app designed for tech enthusiasts and professionals in the electronics field! This application streamlines your interaction with electronics projects, providing a user-friendly platform with powerful backend support for data management and seamless performance.</p>
+    <button class="btn btn-primary" onclick="toggleDetails('electronicsApp')">Know More</button>
+    <div class="details" id="electronicsApp">
+        <p><strong>GitHub:</strong> <a href="https://github.com/Dhinesh-Developer/Electronics_App" target="_blank">GitHub Repo</a></p>
+        <p><strong>YouTube Link:</strong> <a href="https://youtu.be/eLMI5XjPGwY" target="_blank">Watch Here</a></p>
+        <p><strong>Host Link:</strong> <a href="https://youtu.be/eLMI5XjPGwY" target="_blank">Not yet Hosted</a></p>
+        <button class="btn btn-info" onclick="toggleDescription('electronicsAppDescription')">Description</button>
+        <div id="electronicsAppDescription" style="display: none; margin-top: 10px;">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Project Overview -->
+                    <tr>
+                        <td><strong>Project Overview</strong></td>
+                        <td>Dhinesh Developer Electronics App is a modern, scalable platform designed to assist electronics enthusiasts and professionals. Built with React on the frontend, and Java, Spring Boot, and Hibernate on the backend, it provides a dynamic, responsive, and robust solution for managing electronics projects.</td>
+                    </tr>
+                    
+                    <!-- Key Features -->
+                    <tr>
+                        <td><strong>Key Features</strong></td>
+                        <td>
+                            <ul>
+                                <li><strong>Dynamic Frontend:</strong> A modern, responsive UI developed using React, HTML, CSS, and JavaScript, ensuring a seamless user experience across devices.</li>
+                                <li><strong>Robust Backend:</strong> Powered by Java, Spring Boot, and Hibernate, offering reliable data processing, API integration, and scalability.</li>
+                                <li><strong>Efficient Database Management:</strong> Integrated with JDBC for real-time interactions and smooth CRUD operations.</li>
+                                <li><strong>Scalable Architecture:</strong> Built using the latest technologies to handle large datasets and complex queries efficiently.</li>
+                                <li><strong>Electronics-Centric Tools:</strong> Specialized features tailored to electronics projects, including advanced search, data visualization, and more.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    
+                    <!-- Tech Stack -->
+                    <tr>
+                        <td><strong>Tech Stack</strong></td>
+                        <td>
+                            <ul>
+                                <li><strong>Frontend:</strong> React, HTML, CSS, JavaScript</li>
+                                <li><strong>Backend:</strong> Java, Spring Boot, Hibernate</li>
+                                <li><strong>Database:</strong> H2 Database used for JDBC integration</li>
+                                <li><strong>Frameworks & Libraries:</strong> Spring Framework, Hibernate ORM</li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <!-- Project Highlights -->
+                    <tr>
+                        <td><strong>Project Highlights</strong></td>
+                        <td>
+                            <ul>
+                                <li><strong>MVC Architecture:</strong> Modular design for ease of maintenance.</li>
+                                <li><strong>REST APIs:</strong> Secure and efficient data exchange.</li>
+                                <li><strong>Lightweight & Fast:</strong> Optimized performance to cater to electronics professionals.</li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <!-- How It Works -->
+                    <tr>
+                        <td><strong>How It Works</strong></td>
+                        <td>
+                            <ul>
+                                <li><strong>Homepage:</strong> Provides a clean interface for navigating through features.</li>
+                                <li><strong>Search and Explore:</strong> Advanced tools to search for electronics components or projects.</li>
+                                <li><strong>Database Operations:</strong> Real-time interaction with the database using JDBC and Hibernate.</li>
+                                <li><strong>Admin Dashboard:</strong> Manage user data, electronics catalogs, and system settings.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    
+                    <!-- GitHub Repository -->
+                    <tr>
+                        <td><strong>GitHub Repository</strong></td>
+                        <td><a href="https://github.com/Dhinesh-Developer/Electronics_App" target="_blank">View the source code on GitHub</a></td>
+                    </tr>
+                    
+                    <!-- YouTube Demo -->
+                    <tr>
+                        <td><strong>Live Demo on YouTube</strong></td>
+                        <td><a href="https://youtu.be/eLMI5XjPGwY" target="_blank">Watch the full walkthrough on YouTube</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+ <!-- Project: Online Gym -->
+<div class="project-item">
+    <h4>Online Gym: A Digital Platform to Improve Fitness</h4>
+    <p>Welcome to Online Gym, a digital platform designed to help individuals improve their fitness levels. Whether you're aiming to get fit, lose weight, or build muscle, this platform provides essential workout plans, visual guides, and motivational tools to support your fitness journey. Built with core web technologies, the platform ensures an engaging and user-friendly experience for everyone.</p>
+    <button class="btn btn-primary" onclick="toggleDetails('onlineGym')">Know More</button>
+    <div class="details" id="onlineGym" style="display: none; margin-top: 10px;">
+        <p><strong>GitHub:</strong> <a href="https://github.com/Dhinesh-Developer/online-gym-final" target="_blank">GitHub Repo</a></p>
+        <p><strong>YouTube Link:</strong> <a href="https://youtu.be/5V7R1cbtX5s" target="_blank">Watch the Demo</a></p>
+        <p><strong>Host Link:</strong> <a href="https://dhinesh3369.neocities.org/DKGYM/online%20GYM/html/page2" target="_blank">Visit the Live Project</a></p>
+        <button class="btn btn-info" onclick="toggleDescription('onlineGymDescription')">Description</button>
+        <div id="onlineGymDescription" style="display: none; margin-top: 10px;">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Project Overview</strong></td>
+                        <td>Online Gym is a simple yet effective platform for fitness enthusiasts. It offers visually appealing workout plans, educational content, and interactive features to make fitness accessible and engaging for everyone, regardless of experience level.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Key Features</strong></td>
+                        <td>
+                            <ul>
+                                <li><strong>Predefined Workout Plans:</strong> Explore structured workout routines for various fitness goals.</li>
+                                <li><strong>Video and GIF Tutorials:</strong> Step-by-step visual guides for each exercise.</li>
+                                <li><strong>Interactive Design:</strong> Dynamic elements for enhanced user engagement.</li>
+                                <li><strong>Motivational Content:</strong> Access tips and success stories to stay inspired.</li>
+                                <li><strong>Mentor Profiles:</strong> Browse through profiles of trainers and their specialties.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tech Stack</strong></td>
+                        <td>
+                            <ul>
+                                <li><strong>Frontend:</strong> HTML, CSS, JavaScript</li>
+                                <li><strong>Styling:</strong> Bootstrap for responsive design</li>
+                                <li><strong>Media:</strong> GIFs and images for workouts and guides</li>
+                                <li><strong>Interactive Elements:</strong> JavaScript for animations and dynamic features</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Project Highlights</strong></td>
+                        <td>
+                            <ul>
+                                <li><strong>Fully Responsive:</strong> Optimized for desktops, tablets, and mobile devices.</li>
+                                <li><strong>Lightweight Design:</strong> Built without backend or complex frameworks for simplicity.</li>
+                                <li><strong>Rich Visual Content:</strong> GIFs, images, and animations for a highly engaging experience.</li>
+                                <li><strong>Easy Navigation:</strong> Intuitive menus and links for seamless browsing.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>How It Works</strong></td>
+                        <td>
+                            <ul>
+                                <li><strong>Homepage:</strong> Discover workout plans, mentors, and motivational content.</li>
+                                <li><strong>Workout Routines:</strong> Explore categorized plans for beginners, intermediates, and advanced users.</li>
+                                <li><strong>Mentor Section:</strong> Learn about trainers and their expertise.</li>
+                                <li><strong>Chatbot:</strong> Access quick tips and workout suggestions via an interactive chatbot.</li>
+                                <li><strong>Media Library:</strong> Watch visual tutorials for proper exercise techniques.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>GitHub Repository</strong></td>
+                        <td><a href="https://github.com/Dhinesh-Developer/online-gym-final" target="_blank">View the source code on GitHub</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Live Demo on YouTube</strong></td>
+                        <td><a href="https://youtu.be/5V7R1cbtX5s" target="_blank">Watch the full walkthrough on YouTube</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+   
+ 
+<div class="project-item">
+    <h4>Agro Connect: A Digital Platform for Rural Farmers</h4>
+    <p>Welcome to Agro Connect, an innovative digital platform built to empower farmers, foster sustainable agriculture, and bridge the gap between rural and urban farming communities. Developed using Java, J2EE, and MySQL, Agro Connect is more than an app—it’s a step towards revolutionizing agricultural practices and boosting rural economies.</p>
+    <button class="btn btn-primary" onclick="toggleDetails('agroConnect')">Know More</button>
+    <div class="details" id="agroConnect" style="display: none;">
+        <p><strong>GitHub:</strong> <a href="https://github.com/Dhinesh-Developer/Agro-Connect" target="_blank">GitHub Repo</a></p>
+        <p><strong>YouTube Link:</strong> <a href="https://www.youtube.com/watch?v=BXwpGCTXOiE" target="_blank">Watch the Demo</a></p>
+        <p><strong>Host Link:</strong> <a href="https://dhinesh3369.neocities.org/DHINESHKUMAR%20M/AgroLink/" target="_blank">Visit the Live Project</a></p>
+        <button class="btn btn-info" onclick="toggleDescription('agroConnectDescription')">Description</button>
+        <div id="agroConnectDescription" style="display: none; margin-top: 10px;">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Core Objectives -->
+                    <tr>
+                        <td><strong>Core Objectives</strong></td>
+                        <td>
+                            <ul>
+                                <li><strong>Promote Sustainable Agricultural Practices:</strong> Offers resources and guides to help farmers adopt eco-friendly and efficient farming techniques.</li>
+                                <li><strong>Connect Rural and Urban Farmers:</strong> A platform for knowledge-sharing and collaboration between urban and rural farming communities.</li>
+                                <li><strong>Access to Government Schemes:</strong> Helps farmers stay informed about subsidies, schemes, and application guidelines.</li>
+                                <li><strong>Empower Rural Economies:</strong> An in-app marketplace for direct sales, ensuring fair pricing and better profits for farmers.</li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <!-- Key Features -->
+                    <tr>
+                        <td><strong>Key Features</strong></td>
+                        <td>
+                            <ul>
+                                <li><strong>User-Friendly Interface:</strong> Simplified design to ensure easy navigation for all users.</li>
+                                <li><strong>Knowledge Hub:</strong> Provides access to articles, videos, and tutorials on agricultural techniques.</li>
+                                <li><strong>Marketplace Integration:</strong> Enables farmers to sell produce directly to consumers.</li>
+                                <li><strong>Real-Time Updates:</strong> Sends notifications on weather, crop prices, and government announcements.</li>
+                                <li><strong>Scalability:</strong> Built to support future growth and integration of new features.</li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <!-- Tech Stack -->
+                    <tr>
+                        <td><strong>Tech Stack</strong></td>
+                        <td>
+                            <ul>
+                                <li><strong>Frontend:</strong> HTML, CSS, JavaScript</li>
+                                <li><strong>Backend:</strong> Java, J2EE</li>
+                                <li><strong>Database:</strong> MySQL</li>
+                                <li><strong>Frameworks:</strong> Spring, Hibernate</li>
+                                <li><strong>APIs:</strong> RESTful services for seamless data exchange</li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <!-- Project Highlights -->
+                    <tr>
+                        <td><strong>Project Highlights</strong></td>
+                        <td>
+                            <ul>
+                                <li><strong>Hackathon Innovation:</strong> Presented as a concept at the MSME Hackathon to promote rural and urban agricultural development.</li>
+                                <li><strong>Sustainable Growth Focus:</strong> Combines modern agricultural practices with rural needs to create a self-sustaining ecosystem.</li>
+                                <li><strong>Direct Economic Impact:</strong> Empowers rural farmers by removing middlemen and improving market access.</li>
+                                <li><strong>Inclusive Development:</strong> Encourages collaboration between urban and rural farmers for mutual growth.</li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <!-- How It Works -->
+                    <tr>
+                        <td><strong>How It Works</strong></td>
+                        <td>
+                            <ul>
+                                <li><strong>Homepage:</strong> Provides an engaging user interface with options for resources, marketplace, and updates.</li>
+                                <li><strong>Knowledge Hub:</strong> Offers curated content on modern and traditional farming techniques.</li>
+                                <li><strong>Marketplace:</strong> Connects farmers directly to consumers, enabling profitable transactions.</li>
+                                <li><strong>Real-Time Updates:</strong> Delivers critical information on weather, crop prices, and government schemes.</li>
+                                <li><strong>Admin Dashboard:</strong> Allows efficient management of users, content, and system updates.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    
+                    <!-- Links -->
+                    <tr>
+                        <td><strong>GitHub Repository</strong></td>
+                        <td><a href="https://github.com/Dhinesh-Developer/Agro-Connect" target="_blank">View the source code on GitHub</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Live Demo on YouTube</strong></td>
+                        <td><a href="https://dhinesh3369.neocities.org/DHINESHKUMAR%20M/AgroLink/" target="_blank">Watch the walkthrough on YouTube</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<!-- Project: AgriTech - Smart Farming -->
+<div class="project-item">
+    <h4>AgriTech: Smart Farming Solutions</h4>
+    <p>
+        AgriTech focuses on integrating modern technology with traditional agricultural practices to enhance productivity, efficiency, and sustainability. This project leverages IoT, AI, and big data to monitor and optimize farming operations, ensuring precision agriculture and reduced resource wastage.
+    </p>
+    <button class="btn btn-primary" onclick="toggleDetails('agriTech')">Know More</button>
+    <div class="details" id="agriTech" style="display: none; margin-top: 10px;">
+        <p><strong>GitHub:</strong> <a href="https://github.com/Dhinesh-Developer/AquaPhonics" target="_blank">GitHub Repo</a></p>
+        <p><strong>Host Link:</strong> <a href="https://dhinesh3369.neocities.org/SMART%20AQUAPHONICS/AQUAPONIC/home" target="_blank">Visit the Live Project</a></p>
+        <button class="btn btn-info" onclick="toggleDescription('agriTechDescription')">Description</button>
+        <div id="agriTechDescription" style="display: none; margin-top: 10px;">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Project Overview</strong></td>
+                        <td>
+                            AgriTech combines advanced technology and data-driven insights to modernize farming. It ensures efficient water management, pest control, and optimal use of fertilizers, leading to higher yields and sustainable practices.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Key Features</strong></td>
+                        <td>
+                            <ul>
+                                <li><strong>IoT Integration:</strong> Sensors monitor soil moisture, temperature, and nutrient levels.</li>
+                                <li><strong>AI-Powered Insights:</strong> Predictive analysis for crop planning and yield optimization.</li>
+                                <li><strong>Smart Irrigation:</strong> Automated water management systems to conserve resources.</li>
+                                <li><strong>Real-Time Monitoring:</strong> Mobile and web apps for instant updates and recommendations.</li>
+                                <li><strong>Eco-Friendly Practices:</strong> Focused on reducing chemical usage and environmental impact.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>How It Works</strong></td>
+                        <td>
+                            <ul>
+                                <li><strong>Data Collection:</strong> Sensors gather environmental and soil data in real-time.</li>
+                                <li><strong>Cloud Processing:</strong> Data is analyzed using AI and machine learning algorithms.</li>
+                                <li><strong>Actionable Insights:</strong> Recommendations are provided for irrigation, fertilization, and pest control.</li>
+                                <li><strong>Automation:</strong> Smart devices automatically adjust irrigation and nutrient delivery systems.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Project Highlights</strong></td>
+                        <td>
+                            <ul>
+                                <li><strong>Innovative Approach:</strong> Combines technology with farming to maximize efficiency.</li>
+                                <li><strong>Scalable Model:</strong> Applicable to small farms and large agricultural enterprises.</li>
+                                <li><strong>Cost-Effective:</strong> Reduces operational costs while increasing productivity.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Technological Aspects</strong></td>
+                        <td>
+                            <ul>
+                                <li><strong>IoT Sensors:</strong> Collect real-time data from the field.</li>
+                                <li><strong>AI Algorithms:</strong> Analyze data to predict outcomes and suggest actions.</li>
+                                <li><strong>Web-Based Interface:</strong> Provides visualizations and system performance insights.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Toggle Details Visibility
+    function toggleDetails(id) {
+        const details = document.getElementById(id);
+        details.style.display = details.style.display === 'none' ? 'block' : 'none';
+    }
+
+    // Toggle Description Visibility
+    function toggleDescription(id) {
+        const description = document.getElementById(id);
+        description.style.display = description.style.display === 'none' ? 'block' : 'none';
+    }
+</script>
+
+
+</section>
+
+<!-- Footer -->
+<footer>
+   <center> <p>&copy; 2024 DHINESHKUMAR M. All rights reserved.</p></center>
+</footer>
+
+<script>
+    function toggleDetails(projectId) {
+        const details = document.getElementById(projectId);
+        details.style.display = (details.style.display === "none" || details.style.display === "") ? "block" : "none";
+    }
+    function toggleDescription(descriptionId) {
+        const description = document.getElementById(descriptionId);
+        description.style.display = (description.style.display === "none" || description.style.display === "") ? "block" : "none";
+    }
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

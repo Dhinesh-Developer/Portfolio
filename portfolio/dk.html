@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DHINESHKUMAR</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+   
+    
+    <style>
+        body {
+            background-color: #141414;
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #141414;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        nav a {
+            color: #e50914;
+            font-family: 'Bebas Neue', cursive;
+            letter-spacing: 1px;
+        }
+        nav a:hover {
+            color: #fff;
+        }
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px 20px;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                        url('https://source.unsplash.com/1600x900/?coding,technology') no-repeat center center/cover;
+            color: #fff;
+            width: 100%;
+            height: 100vh;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .hero-content {
+            max-width: 60%;
+            padding: 20px;
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            font-family: 'Bebas Neue', cursive;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin: 20px 0;
+        }
+        .hero-buttons {
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+        }
+        .hero-buttons .btn {
+            margin: 10px;
+            padding: 12px 25px;
+            font-size: 1rem;
+            border: 2px solid #e50914;
+            background: transparent;
+            color: #e50914;
+            transition: all 0.3s ease;
+        }
+        .hero-buttons .btn:hover {
+            background: #e50914;
+            color: #fff;
+            transform: scale(1.1);
+        }
+        .social-icons a {
+            color: lightseagreen;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            transition: transform 0.3s;
+        }
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
+        .profile-section {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px 20px;
+            margin-top: -50px;
+            z-index: 1;
+            width: 100%;
+            position: relative;
+        }
+        .profile-img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 4px solid whitesmoke;
+        }
+        .profile-section .buttons {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+        .profile-section .buttons .btn {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: 2px solid lavender;
+            background: transparent;
+            color: whitesmoke;
+            transition: all 0.3s ease;
+        }
+        .profile-section .buttons .btn:hover {
+            background: lightgreen;
+            color: #fff;
+            transform: scale(1.1);
+        }
+        footer {
+            background-color: #000;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: #777;
+        }
+        .about-me {
+            background-color: #222;
+            padding: 40px;
+            text-align: center;
+        }
+        .about-me h2 {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .about-me p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+        .profile-section .social-icons {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            .hero-content, .profile-section {
+                max-width: 100%;
+                text-align: center;
+            }
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+            .profile-section {
+                flex-direction: column;
+                align-items: center;
+            }
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .hero p {
+                font-size: 1.2rem;
+            }
+            .profile-img {
+                width: 150px;
+                height: 150px;
+            }
+            .hero-buttons {
+                flex-direction: row;
+                justify-content: center;
+                gap: 20px;
+            }
+            .hero-buttons .btn {
+                margin: 5px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            .profile-img {
+                width: 120px;
+                height: 120px;
+            }
+            .about-me h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="https://github.com/Dhinesh-Developer">DHINESHKUMAR M</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="dk.html">About Me</a></li>
+                <li class="nav-item"><a class="nav-link" href="projectdk.html">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="Skills.html">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="achieve.html">Achievements</a></li>
+                <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+                <li class="nav-item"><a class="nav-link" href="HI.html">Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="profile-section">
+        <img src="1.jpg" alt="Profile Picture" class="profile-img">
+        <div class="hero-content">
+            <h1>DHINESHKUMAR M</h1>
+            <p>FULL STACK JAVA DEVELOPER</p>
+            <div class="social-icons">
+                <a href="https://github.com/Dhinesh-Developer" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/%E1%B4%85%CA%9C%C9%AA%C9%B4%E1%B4%87s%CA%9C%E1%B4%8B%E1%B4%9C%E1%B4%8D%E1%B4%80%CA%80-%E1%B4%8D-b75b1a283/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://leetcode.com/u/dhineshdeveloper_07/" target="_blank"><i class="fas fa-code"></i></a>
+                <a href="https://www.youtube.com/channel/UCTjzE4FaYXEb4Z1KS8VE_-g" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+        <div class="buttons">
+            <a href="DkReume.pdf" target="_blank" class="btn">Resume</a>
+            <a href="mailto:dhineshdeveloper07@gmail.com" class="btn">Hire Me</a>
+        </div>
+    </div>
+</section>
+
+<!-- About Me Section -->
+<section id="about" class="about-me">
+    <h2>About Me</h2>
+    <p>Hai Visitors. I am a skilled Full Stack Java Developer 💻 with extensive experience working on over five projects in full-stack Java development 🌐. I have successfully solved more than 200 problems on LeetCode 🎯, showcasing my problem-solving and analytical skills. Additionally, I ranked 1st in my school during both the 12th and 11th grades 🥇, highlighting my academic excellence. With a strong foundation in Data Structures and Algorithms (DSA) 📊, I have a passion for teaching programming concepts effectively 🎓.</p>
+</section>
+
+<!-- Footer -->
+<footer>
+    <center><p>&copy; 2024 DHINESHKUMAR. All rights reserved.</p></center>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
