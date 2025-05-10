@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hackathons & Internships - DHINESHKUMAR</title>
+    <title>Hackathons & Internships - DHINESHKUMAR | Java Developer</title>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -13,6 +14,7 @@
             color: white;
             margin: 0;
             padding: 0;
+            line-height: 1.6;
         }
 
         nav {
@@ -27,85 +29,152 @@
             letter-spacing: 1px;
             margin-right: 20px;
             text-decoration: none;
+            font-size: 1.1rem;
         }
 
         nav a:hover {
-            color: gainsboro;
+            color: #0d6efd;
         }
 
         .section-title {
             text-align: center;
-            margin-top: 50px;
-            font-size: 2rem;
+            margin: 50px 0 30px;
+            font-size: 2.2rem;
             font-weight: bold;
-            color: lightseagreen;
+            color: #0d6efd;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
-        .hackathon-section, .internship-section {
-            padding: 60px 20px;
-            text-align: center;
+        .section-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .hackathon-section, .internship-section, .publication-section {
+            padding: 60px 0;
             background-color: #222;
         }
 
-        .hackathon-container, .internship-container {
+        .card-container {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-around;
+            justify-content: center;
+            gap: 30px;
+            padding: 0 20px;
         }
 
-        .hackathon-card, .internship-card {
+        .experience-card {
             background-color: #333;
             border-radius: 10px;
-            margin: 15px;
-            padding: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            width: 45%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+            width: 100%;
+            max-width: 500px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
         }
 
-        .hackathon-card img, .internship-card img {
+        .experience-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+        }
+
+        .card-img {
             width: 100%;
-            height: 300px;
+            height: 250px;
             object-fit: cover;
-            border-radius: 10px;
-            margin-bottom: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border: 2px solid #444;
         }
 
         .card-title {
             font-size: 1.5rem;
             font-weight: bold;
-            color: whitesmoke;
+            color: white;
+            margin-bottom: 10px;
+            font-family: 'Bebas Neue', cursive;
+            letter-spacing: 1px;
+        }
+
+        .card-subtitle {
+            font-size: 1rem;
+            color: #0d6efd;
             margin-bottom: 15px;
+            font-weight: 600;
         }
 
         .card-body {
             font-size: 1rem;
+            margin-bottom: 20px;
+            color: #ddd;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .tech-badge {
+            background-color: #0d6efd;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
         }
 
         .card-link {
-            color: #007bff;
+            display: inline-block;
+            background-color: #0d6efd;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
             font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
         }
 
         .card-link:hover {
-            text-decoration: underline;
+            background-color: #0b5ed7;
+            color: white;
         }
 
-        /* Animations */
-        @keyframes fadeIn {
-            0% { opacity: 0; }
-            100% { opacity: 1; }
+        footer {
+            background-color: #141414;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
         }
 
-        /* Responsive Design */
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #0d6efd;
+        }
+
         @media (max-width: 768px) {
-            .hackathon-card, .internship-card {
-                width: 100%;
-            }
             .section-title {
-                font-size: 1.5rem;
+                font-size: 1.8rem;
+            }
+            
+            .experience-card {
+                width: 100%;
             }
         }
     </style>
@@ -134,23 +203,73 @@
 
 <!-- Hackathons Section -->
 <section id="hackathons" class="hackathon-section">
-    <h2 class="section-title"><strong>HACKATHON</strong></h2>
-    <div class="hackathon-container">
-        <div class="hackathon-card">
-            <img src="h4.jpg" alt="Accenture Innovation Challenge 2k24">
-            <div class="card-title">Accenture Innovation Challenge</div>
-            <div class="card-body">
-                <p>Presented an online gym platform offering digital fitness services including personalized workout routines and a chatbot.</p>
-                <a href="https://dhinesh3369.neocities.org/DKGYM/online%20GYM/html/page2" class="card-link"><strong>PROJECT LINK</strong></a><br>
+    <div class="section-container">
+        <h2 class="section-title"><i class="fas fa-code-branch"></i> HACKATHONS</h2>
+        <div class="card-container">
+            <div class="experience-card">
+                <img src="h4.jpg" alt="Accenture Hackathon" class="card-img">
+                <h3 class="card-title">Accenture Innovation Challenge 2024</h3>
+                <p class="card-subtitle"><i class="fas fa-trophy"></i> National Level Competition</p>
+                <div class="card-body">
+                    <p>Designed and implemented an online fitness platform with:</p>
+                    <ul>
+                        <li>Backend with RESTful APIs</li>
+                        <li>JWT authentication for secure user access</li>
+                        <li>Database integration</li>
+                        <li>Responsive frontend design</li>
+                    </ul>
+                </div>
+                <div class="tech-stack">
+                    <span class="tech-badge">Java 11</span>
+                    <span class="tech-badge">Spring Boot</span>
+                    <span class="tech-badge">Hibernate</span>
+                    <span class="tech-badge">MySQL</span>
+                </div>
+                <a href="https://dhinesh3369.neocities.org/DKGYM/online%20GYM/html/page2" class="card-link">Explore Project</a>
             </div>
-        </div>
-        <div class="hackathon-card">
-            <img src="h1.jpg" alt="Smart India Hackathon">
-            <div class="card-title">Smart India Hackathon</div>
-            <div class="card-body">
-                <p>Developed an app focused on sustainable farming practices, knowledge sharing, and empowering rural farmers.</p>
-                <a href="https://dhinesh3369.neocities.org/DHINESHKUMAR%20M/AgroLink/" class="card-link"><strong>PROJECT LINK</strong></a><br>
-       
+            
+            <div class="experience-card">
+                <img src="h1.jpg" alt="Smart India Hackathon" class="card-img">
+                <h3 class="card-title">Smart India Hackathon 2023</h3>
+                <p class="card-subtitle"><i class="fas fa-flag"></i> Government of India Initiative</p>
+                <div class="card-body">
+                    <p>Developed an agricultural solution featuring:</p>
+                    <ul>
+                        <li>MVC architecture</li>
+                        <li>Database connectivity</li>
+                        <li>Session management for user workflows</li>
+                        <li>Data visualization</li>
+                    </ul>
+                </div>
+                <div class="tech-stack">
+                    <span class="tech-badge">Java EE</span>
+                    <span class="tech-badge">JSP</span>
+                    <span class="tech-badge">JDBC</span>
+                    <span class="tech-badge">Tomcat</span>
+                </div>
+                <a href="https://dhinesh3369.neocities.org/DHINESHKUMAR%20M/AgroLink/" class="card-link">Explore Project</a>
+            </div>
+            
+            <div class="experience-card">
+                <img src="KPR.jpg" alt="HACHXELERATE Hackathon" class="card-img">
+                <h3 class="card-title">HACHXELERATE'25</h3>
+                <p class="card-subtitle"><i class="fas fa-laptop-code"></i> 24-Hour Intensive Coding</p>
+                <div class="card-body">
+                    <p>Built an emergency response system using:</p>
+                    <ul>
+                        <li>MVC architecture</li>
+                        <li>REST API endpoints</li>
+                        <li>Data persistence</li>
+                        <li>Frontend with real-time updates</li>
+                    </ul>
+                </div>
+                <div class="tech-stack">
+                    <span class="tech-badge">Spring MVC</span>
+                    <span class="tech-badge">JPA</span>
+                    <span class="tech-badge">MySQL</span>
+                    <span class="tech-badge">REST API</span>
+                </div>
+                <a href="https://github.com/Dhinesh-Developer/SaveLife-Backend" class="card-link">View Code Repository</a>
             </div>
         </div>
     </div>
@@ -158,26 +277,145 @@
 
 <!-- Internships Section -->
 <section id="internships" class="internship-section">
-    <h2 class="section-title"><strong>INTERNSHIP</strong></h2>
-    <div class="internship-container">
-        <div class="internship-card">
-            <img src="i1.jpg" alt="Internship 1">
-            <div class="card-title">Internship 1: Java Development</div>
-            <div class="card-body">
-                <p>Worked as a Java Developer in <strong>INTERNPE</strong>, company focused on basic java projects</p>
-                <p><a href="https://github.com/Dhinesh-Developer/internpe_java">Git Repo</a></p>
+    <div class="section-container">
+        <h2 class="section-title"><i class="fas fa-briefcase"></i> INTERNSHIPS</h2>
+        <div class="card-container">
+            <div class="experience-card">
+                <img src="i1.jpg" alt="Development Internship" class="card-img">
+                <h3 class="card-title">Software Development</h3>
+                <p class="card-subtitle"><i class="fas fa-laptop-house"></i> INTERNPE | 2024</p>
+                <div class="card-body">
+                    <p>Enhanced programming skills through:</p>
+                    <ul>
+                        <li>Developing OOPS-based applications</li>
+                        <li>Implementing collections framework</li>
+                        <li>Building multithreaded applications</li>
+                        <li>Creating database-connected systems</li>
+                    </ul>
+                </div>
+                <div class="tech-stack">
+                    <span class="tech-badge">Core Java</span>
+                    <span class="tech-badge">OOP</span>
+                    <span class="tech-badge">JDBC</span>
+                    <span class="tech-badge">Collctions</span>
+                </div>
+                
+            </div>
+
+            <div class="experience-card">
+    <img src="AWS.jpg" alt="AWS Internship" class="card-img">
+    <h3 class="card-title">AWS Cloud Internship</h3>
+    <p class="card-subtitle"><i class="fas fa-building"></i> Quaziro Technologies | 2023</p>
+    <div class="card-body">
+        <p>Hands-on experience in Amazon Web Services:</p>
+        <ul>
+            <li>Provisioning virtual servers with EC2</li>
+            <li>Managing relational databases with RDS</li>
+            <li>Storing and serving assets using S3</li>
+        </ul>
+    </div>
+    <div class="tech-stack">
+        <span class="tech-badge">AWS</span>
+        <span class="tech-badge">EC2</span>
+        <span class="tech-badge">RDS</span>
+        <span class="tech-badge">S3</span>
+    </div>
+</div>
+
+            <div class="experience-card">
+    <img src="i3.jpg" alt="Web Development Internship" class="card-img">
+    <h3 class="card-title">Web Development</h3>
+    <p class="card-subtitle"><i class="fas fa-building"></i> Prodigy Infotech | 2024</p>
+    <div class="card-body">
+        <p>Completed a professional internship in web development:</p>
+        <ul>
+            <li>Responsive website design</li>
+            <li>User interface development</li>
+            <li>Website performance optimization</li>
+            <li>Deployment of static pages</li>
+        </ul>
+    </div>
+    <div class="tech-stack">
+        <span class="tech-badge">HTML</span>
+        <span class="tech-badge">CSS</span>
+        <span class="tech-badge">Bootstrap</span>
+        <span class="tech-badge">JavaScript</span>
+    </div>
+</div>
+
+            
+            <div class="experience-card">
+                <img src="Novi.jpg" alt="Fullstack Internship" class="card-img">
+                <h3 class="card-title">Full Stack Development</h3>
+                <p class="card-subtitle"><i class="fas fa-building"></i> NoviTech R&D  | 2024</p>
+                <div class="card-body">
+                    <p>Professional full-stack training:</p>
+                    <ul>
+                        <li>Application development</li>
+                        <li>ORM implementation</li>
+                        <li>REST API design and documentation</li>
+                        <li>Frontend integration</li>
+                    </ul>
+                </div>
+                <div class="tech-stack">
+                    <span class="tech-badge">Spring Boot</span>
+                    <span class="tech-badge">Collections</span>
+                    <span class="tech-badge">MySQL</span>
+                    <span class="tech-badge">React</span>
+                </div>
+               
             </div>
         </div>
-        <div class="internship-card">
-            <img src="i3.jpg" alt="Internship 2">
-            <div class="card-title">Internship 2: Web Development</div>
-            <div class="card-body">
-                <p>Worked as a Web Development in <strong>PRODIGY</strong>,company contributing to front-end projects</p>
-                <p><a href="https://github.com/Dhinesh-Developer/PRODIGY_WD_1">Git Repo Week 1</a></p>
-                <p><a href="https://github.com/Dhinesh-Developer/prodigy_WD_03">Git Repo week 2</a></p>
-          
-                <p><a href="https://github.com/Dhinesh-Developer/DK_PORT_PROFILE">Git Repo Week 3</a></p>
-                <p><a href="https://github.com/Dhinesh-Developer/PRODIGY_WD_1">Git Repo Week 4</a></p>
+    </div>
+</section>
+
+<!-- Publications Section -->
+<section id="publications" class="publication-section">
+    <div class="section-container">
+        <h2 class="section-title"><i class="fas fa-file-alt"></i> PUBLICATIONS</h2>
+        <div class="card-container">
+            <div class="experience-card">
+                <img src="conference.jpg" alt="Research Paper" class="card-img">
+                <h3 class="card-title">AI-Optimized Emergency Response</h3>
+                <p class="card-subtitle"><i class="fas fa-graduation-cap"></i> ICETS'25 Conference</p>
+                <div class="card-body">
+                    <p>Research paper on emergency response systems:</p>
+                    <ul>
+                        <li>Machine learning integration</li>
+                        <li>Real-time data processing algorithms</li>
+                        <li>Performance optimization techniques</li>
+                        <li>Case studies with actual implementation</li>
+                    </ul>
+                    <p><strong>Paper ID:</strong> IJRAR1ECP204</p>
+                </div>
+                <div class="tech-stack">
+                    <span class="tech-badge">AI</span>
+                    <span class="tech-badge">Data Science</span>
+                    <span class="tech-badge">Optimization</span>
+                </div>
+                <a href="paper.pdf" class="card-link">View Publication</a>
+            </div>
+            
+            <div class="experience-card">
+                <img src="published.jpg" alt="Journal Publication" class="card-img">
+                <h3 class="card-title">Modern Application Development Approaches</h3>
+                <p class="card-subtitle"><i class="fas fa-book"></i> International Journal of Computer Applications</p>
+                <div class="card-body">
+                    <p>Published research on development methodologies:</p>
+                    <ul>
+                        <li>Microservices architecture</li>
+                        <li>DevOps integration</li>
+                        <li>Containerization strategies</li>
+                        <li>Automated testing frameworks</li>
+                    </ul>
+                   
+                </div>
+                <div class="tech-stack">
+                    <span class="tech-badge">Microservices</span>
+                    <span class="tech-badge">DevOps</span>
+                    <span class="tech-badge">Docker</span>
+                </div>
+                <a href="P.pdf" class="card-link">Read Publication</a>
             </div>
         </div>
     </div>
@@ -185,12 +423,16 @@
 
 <!-- Footer -->
 <footer>
-    <center><p>&copy; 2024 DHINESHKUMAR. All rights reserved.</p></center>
+    <div class="container">
+        <p>&copy; 2024 DHINESHKUMAR M - Software Developer</p>
+        <div class="social-links">
+            <a href="https://github.com/Dhinesh-Developer"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>
-
-

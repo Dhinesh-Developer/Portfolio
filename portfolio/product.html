@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product List</title>
+<style>
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #212121;
+    padding: 10px 20px;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #1e90ff;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.card {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 8px;
+    margin: 15px;
+    width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    color: #1e90ff;
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.card h4 {
+    color: #b0b0b0;
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+.card h5 {
+    color: #ffd700;
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+    <a href="#">DK's Shopping Mart</a>
+    <div>
+        <a href="#">Add Details</a>
+        <a href="#">Delete Details</a>
+        <a href="#">Update Details</a>
+        <a href="#">Sign up</a>
+        <a href="#">Sign in</a>
+    </div>
+</div>
+
+<div class="product-container">
+    <div class="card">
+        <img src="https://via.placeholder.com/250" alt="Product Image">
+        <h3>Wireless Headphones</h3>
+        <h4>Brand: Sony</h4>
+        <h5>Price: $99</h5>
+    </div>
+    <div class="card">
+        <img src="https://via.placeholder.com/250" alt="Product Image">
+        <h3>Smart Watch</h3>
+        <h4>Brand: Apple</h4>
+        <h5>Price: $299</h5>
+    </div>
+    <div class="card">
+        <img src="https://via.placeholder.com/250" alt="Product Image">
+        <h3>Gaming Laptop</h3>
+        <h4>Brand: ASUS</h4>
+        <h5>Price: $1299</h5>
+    </div>
+    <div class="card">
+        <img src="https://via.placeholder.com/250" alt="Product Image">
+        <h3>Bluetooth Speaker</h3>
+        <h4>Brand: JBL</h4>
+        <h5>Price: $79</h5>
+    </div>
+    <div class="card">
+        <img src="https://via.placeholder.com/250" alt="Product Image">
+        <h3>Smartphone</h3>
+        <h4>Brand: Samsung</h4>
+        <h5>Price: $899</h5>
+    </div>
+    <div class="card">
+        <img src="https://via.placeholder.com/250" alt="Product Image">
+        <h3>4K TV</h3>
+        <h4>Brand: LG</h4>
+        <h5>Price: $1499</h5>
+    </div>
+    <div class="card">
+        <img src="https://via.placeholder.com/250" alt="Product Image">
+        <h3>Wireless Mouse</h3>
+        <h4>Brand: Logitech</h4>
+        <h5>Price: $49</h5>
+    </div>
+    <div class="card">
+        <img src="https://via.placeholder.com/250" alt="Product Image">
+        <h3>External Hard Drive</h3>
+        <h4>Brand: Seagate</h4>
+        <h5>Price: $119</h5>
+    </div>
+</div>
+
+</body>
+</html>

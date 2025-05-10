@@ -120,6 +120,1083 @@
 <!-- Projects Section -->
 <section id="projects" class="projects-section">
     <h2>My Projects</h2>
+<!-- Project 2: DK's Java Solutions -->
+<div class="project-item">
+    <h4>DK's Java Solutions</h4>
+    <p>An AI-driven platform designed to provide comprehensive resources, examples, and solutions for Java and frontend development, covering concepts like exceptions, multithreading, Spring, Hibernate, JDBC, and more.</p>
+    <p><strong>YouTube Demo:</strong> <a href="https://www.youtube.com/watch?v=Drr9xaAgru8&t=61s" target="_blank">Watch Here</a></p>
+    <button class="btn btn-primary" onclick="toggleDetails('dkJavaSolutions')">Know More</button>
+    <div class="details" id="dkJavaSolutions" style="display: none;">
+        <p><strong>GitHub:</strong> <a href="https://github.com/Dhinesh-Developer/DK_SOLUTIONS/tree/main" target="_blank">GitHub Repo</a></p>
+        <p><strong>YouTube Link:</strong> <a href="https://www.youtube.com/watch?v=Drr9xaAgru8&t=61s" target="_blank">Watch Here</a></p>
+        <p><strong>Host Link:</strong> <a href="" target="_blank">Visit Hosted Project</a></p>
+        <button class="btn btn-info" onclick="toggleDescription('dkJavaDescription')">Description</button>
+        <div id="dkJavaDescription" style="display: none; margin-top: 10px;">
+            <div class="container mt-5">
+                <h1 class="text-center mb-4">DK's Java Solutions</h1>
+
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Project Overview -->
+                        <tr>
+                            <td><strong>Project Overview</strong></td>
+                            <td>DK's Java Solutions is a robust AI-powered platform created to assist developers in mastering Java concepts and frontend technologies. The platform features tutorials, examples, and real-world solutions for Java topics such as exceptions, multithreading, Spring, Hibernate, JDBC, and more. It also includes frontend tutorials covering HTML, CSS, and JavaScript.</td>
+                        </tr>
+
+                        <!-- Key Features -->
+                        <tr>
+                            <td><strong>Key Features</strong></td>
+                            <td>
+                                <ul>
+                                    <li><strong>Comprehensive Tutorials:</strong> In-depth explanations of Java and frontend concepts.</li>
+                                    <li><strong>Code Examples:</strong> Ready-to-use examples for faster learning.</li>
+                                    <li><strong>Interactive Demos:</strong> Live coding examples for better understanding.</li>
+                                    <li><strong>AI Assistance:</strong> An AI chatbot to answer Java-related queries.</li>
+                                    <li><strong>Real-World Applications:</strong> Practical use cases demonstrating Java frameworks and frontend technologies.</li>
+                                </ul>
+                            </td>
+                        </tr>
+
+                        <!-- Tech Stack -->
+                        <tr>
+                            <td><strong>Tech Stack</strong></td>
+                            <td>
+                                <ul>
+                                    <li><strong>Frontend:</strong> HTML, CSS, JavaScript, Bootstrap.</li>
+                                    <li><strong>Backend:</strong> Java (J2EE), Servlets, JSP, JDBC, Spring, Hibernate.</li>
+                                    <li><strong>Database:</strong> MySQL, H2 Database.</li>
+                                </ul>
+                            </td>
+                        </tr>
+
+                        <!-- How It Works -->
+                        <tr>
+                            <td><strong>How It Works</strong></td>
+                            <td>
+                                <ul>
+                                    <li><strong>Homepage:</strong> Provides an overview of Java and frontend topics.</li>
+                                    <li><strong>Topics Section:</strong> Organized content on Java concepts, Spring, Hibernate, and frontend technologies.</li>
+                                    <li><strong>Interactive Tools:</strong> Includes a coding sandbox and AI chatbot for learning assistance.</li>
+                                    <li><strong>Resource Library:</strong> Access to tutorials, guides, and videos.</li>
+                                </ul>
+                            </td>
+                        </tr>
+
+                        <!-- Database Structure -->
+                        <tr>
+                            <td><strong>Database Structure</strong></td>
+                            <td>
+                                <ul>
+                                    <li><strong>Users Table:</strong> userId, name, username, password, email, role, createdDate.</li>
+                                    <li><strong>Topics Table:</strong> topicId, topicName, description, resources (links to tutorials, guides).</li>
+                                    <li><strong>Examples Table:</strong> exampleId, topicId (foreign key), codeSnippet, explanation.</li>
+                                </ul>
+                            </td>
+                        </tr>
+
+                        <!-- GitHub Repository -->
+                        <tr>
+                            <td><strong>GitHub Repository</strong></td>
+                            <td><a href="https://github.com/Dhinesh-Developer/DK_SOLUTIONS/tree/main" target="_blank">View the source code on GitHub</a></td>
+                        </tr>
+
+                        <!-- YouTube Demo -->
+                        <tr>
+                            <td><strong>Live Demo on YouTube</strong></td>
+                            <td><a href="https://www.youtube.com/watch?v=Drr9xaAgru8&t=61s" target="_blank">Watch the walkthrough on YouTube</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleDetails(projectId) {
+        const details = document.getElementById(projectId);
+        details.style.display = (details.style.display === "none" || details.style.display === "") ? "block" : "none";
+    }
+
+    function toggleDescription(descriptionId) {
+        const description = document.getElementById(descriptionId);
+        description.style.display = (description.style.display === "none" || description.style.display === "") ? "block" : "none";
+    }
+</script>
+<!-- Project: Smart Emergency Healthcare System -->
+<div class="project-item">
+    <h4>Smart Emergency Healthcare System 🚑</h4>
+    <p><strong>Smart Emergency Healthcare System</strong> is an AI-powered platform designed to revolutionize emergency medical response through real-time data integration, instant patient identification, and AI-assisted decision-making to save lives faster.</p>
+    <p><strong>YouTube Demo:</strong> <a href="https://www.youtube.com/watch?v=HuXWSw10hcI" target="_blank">Watch Here</a></p>
+    <button class="btn btn-primary" onclick="toggleDetails('emergencySystemDetails')">Know More</button>
+    <div class="details" id="emergencySystemDetails" style="display: none;">
+      <p><strong>GitHub Repository:</strong> <a href="https://github.com/Dhinesh-Developer/SaveLife-Backend" target="_blank">View Source Code</a></p>
+      <p><strong>Technologies Used:</strong> Spring Boot, Java, JWT, MySQL, AI models.</p>
+      <button class="btn btn-info" onclick="toggleDescription('emergencySystemDescription')">Description</button>
+      <div id="emergencySystemDescription" style="display: none; margin-top: 10px;">
+        <div class="container mt-3">
+          <table class="table table-bordered">
+            <thead><tr><th>Feature</th><th>Description</th></tr></thead>
+            <tbody>
+              <tr>
+                <td><strong>Project Overview</strong></td>
+                <td>Enhances emergency healthcare response by providing AI-driven medical recommendations, instant patient data access, and real-time hospital communication to reduce critical delays in treatment.</td>
+              </tr>
+              <tr>
+                <td><strong>Key Features</strong></td>
+                <td>
+                  <ul>
+                    <li>🧠 AI-powered decision support based on vitals, history, and injury analysis.</li>
+                    <li>📡 Real-time hospital integration with automated data transmission.</li>
+                    <li>📍 Location-based identification for unconscious patients.</li>
+                    <li>🔐 Secure access using JWT authentication for data privacy.</li>
+                    <li>🆔 Unique patient ID mapping for instant identification.</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Data Flow</strong></td>
+                <td>
+                  <ul>
+                    <li><strong>Emergency Input:</strong> Paramedics input patient vitals and conditions.</li>
+                    <li><strong>AI Processing:</strong> System analyzes data and provides treatment recommendations.</li>
+                    <li><strong>Hospital Sync:</strong> All data sent ahead to hospital with alerts for preparation.</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    function toggleDetails(projectId) {
+      const details = document.getElementById(projectId);
+      details.style.display = (details.style.display === "none" || details.style.display === "") ? "block" : "none";
+    }
+  
+    function toggleDescription(descriptionId) {
+      const description = document.getElementById(descriptionId);
+      description.style.display = (description.style.display === "none" || description.style.display === "") ? "block" : "none";
+    }
+  </script>
+  
+<!-- Project: LinkLytics -->
+<div class="project-item">
+    <h4>LinkLytics 🔗</h4>
+    <p><strong>LinkLytics</strong> is an advanced URL shortening solution that transforms long, cluttered web links into sleek, 6–8 character short URLs. It significantly enhances database memory efficiency and simplifies sharing across platforms, making it ideal for developers, marketers, and everyday users.</p>
+    <p><strong>YouTube Demo:</strong> <a href="https://www.youtube.com/watch?v=mgL2TAaqDQY" target="_blank">Watch Here</a></p>
+    <button class="btn btn-primary" onclick="toggleDetails('linkLyticsDetails')">Know More</button>
+    <div class="details" id="linkLyticsDetails" style="display: none;">
+      <p><strong>GitHub Repository:</strong> <a href="https://github.com/Dhinesh-Developer/LinkLytics" target="_blank">View Source Code</a></p>
+      <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript, Spring Boot, MySQL.</p>
+      <button class="btn btn-info" onclick="toggleDescription('linkLyticsDescription')">Description</button>
+      <div id="linkLyticsDescription" style="display: none; margin-top: 10px;">
+        <div class="container mt-3">
+          <table class="table table-bordered">
+            <thead><tr><th>Feature</th><th>Description</th></tr></thead>
+            <tbody>
+              <tr>
+                <td><strong>Project Overview</strong></td>
+                <td>Converts long URLs into short, unique codes while tracking access metrics for analytics and performance insights.</td>
+              </tr>
+              <tr>
+                <td><strong>Key Features</strong></td>
+                <td>
+                  <ul>
+                    <li>🔐 Collision-resistant short URL generation.</li>
+                    <li>🔁 Fast redirection to original links.</li>
+                    <li>📈 Click tracking and URL usage history.</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Database Design</strong></td>
+                <td>
+                  <ul>
+                    <li><strong>URL Table:</strong> id, originalUrl, shortCode, createdDate, clickCount.</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Project: AI Email Reply Generator -->
+  <div class="project-item">
+    <h4>AI Email Reply Generator ✉️</h4>
+    <p><strong>AI Email Reply Generator</strong> is a Chrome Extension crafted to streamline professional communication. By integrating seamlessly into Gmail, it uses AI to auto-generate thoughtful, relevant email replies based on context—boosting productivity and reducing mental workload.</p>
+    <p><strong>YouTube Demo:</strong> <a href="https://www.youtube.com/watch?v=waFMnzsvv1Y" target="_blank">Watch Here</a></p>
+    <button class="btn btn-primary" onclick="toggleDetails('emailReplyDetails')">Know More</button>
+    <div class="details" id="emailReplyDetails" style="display: none;">
+      <p><strong>GitHub Repository:</strong> <a href="https://github.com/Dhinesh-Developer/Email_Reply_Generator" target="_blank">View Source Code</a></p>
+      <p><strong>Technologies Used:</strong> React, Spring Boot, Java, Chrome Extension APIs.</p>
+      <button class="btn btn-info" onclick="toggleDescription('emailReplyDescription')">Description</button>
+      <div id="emailReplyDescription" style="display: none; margin-top: 10px;">
+        <div class="container mt-3">
+          <table class="table table-bordered">
+            <thead><tr><th>Feature</th><th>Description</th></tr></thead>
+            <tbody>
+              <tr>
+                <td><strong>Project Overview</strong></td>
+                <td>Generates AI-powered email replies directly in Gmail, tailored to the email's content for faster communication.</td>
+              </tr>
+              <tr>
+                <td><strong>Key Features</strong></td>
+                <td>
+                  <ul>
+                    <li>🧠 Context-sensitive NLP response engine.</li>
+                    <li>🧩 Embedded UI overlay in Gmail for seamless usage.</li>
+                    <li>⚡ Quick copy/insert actions for workflow acceleration.</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Architecture</strong></td>
+                <td>
+                  <ul>
+                    <li><strong>Frontend:</strong> React with Gmail DOM integration.</li>
+                    <li><strong>Backend:</strong> Spring Boot API handling AI reply generation logic.</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Project: Smart Research Assistant -->
+  <div class="project-item">
+    <h4>Smart Research Assistant 📚</h4>
+    <p><strong>Smart Research Assistant</strong> is a Chrome Extension developed to enhance web research workflows. It enables users to summarize selected text from webpages, store it locally, and refer to it offline—empowering students, researchers, and professionals alike.</p>
+    <p><strong>YouTube Demo:</strong> <a href="https://www.youtube.com/watch?v=ZsuKhFY700g" target="_blank">Watch Here</a></p>
+    <button class="btn btn-primary" onclick="toggleDetails('researchAssistantDetails')">Know More</button>
+    <div class="details" id="researchAssistantDetails" style="display: none;">
+      <p><strong>GitHub Repository:</strong> <a href="https://github.com/Dhinesh-Developer/ResearchAssistant" target="_blank">View Source Code</a></p>
+      <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript, Spring Boot, Chrome Extension APIs.</p>
+      <button class="btn btn-info" onclick="toggleDescription('researchAssistantDescription')">Description</button>
+      <div id="researchAssistantDescription" style="display: none; margin-top: 10px;">
+        <div class="container mt-3">
+          <table class="table table-bordered">
+            <thead><tr><th>Feature</th><th>Description</th></tr></thead>
+            <tbody>
+              <tr>
+                <td><strong>Project Overview</strong></td>
+                <td>Assists users in extracting, summarizing, and storing key information from any webpage in real-time.</td>
+              </tr>
+              <tr>
+                <td><strong>Key Features</strong></td>
+                <td>
+                  <ul>
+                    <li>📝 One-click text summarization for any selected webpage content.</li>
+                    <li>💾 Local storage support for offline note access and editing.</li>
+                    <li>🎯 Focused, minimalist interface for distraction-free use.</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Architecture</strong></td>
+                <td>
+                  <ul>
+                    <li><strong>Frontend:</strong> HTML, CSS, JavaScript (Vanilla).</li>
+                    <li><strong>Backend:</strong> Spring Boot service for summarization logic.</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    function toggleDetails(projectId) {
+      const details = document.getElementById(projectId);
+      details.style.display = (details.style.display === "none" || details.style.display === "") ? "block" : "none";
+    }
+  
+    function toggleDescription(descriptionId) {
+      const description = document.getElementById(descriptionId);
+      description.style.display = (description.style.display === "none" || description.style.display === "") ? "block" : "none";
+    }
+  </script>
+<!-- Project: DK's Job Portal -->
+<div class="project-item">
+    <h4>DK's Job Portal</h4>
+    <p>A web-based <strong>Job Portal</strong> to provide job opportunities and streamline the application process. Developed for **DK Institute of Technology**.</p>
+    <p><strong>YouTube Link:</strong> <a href="https://www.youtube.com/watch?v=h4Xdw9kJx5I&t=87s" target="_blank">Watch Here</a></p>
+    <button class="btn btn-primary" onclick="toggleDetails('jobPortalDetails')">Know More</button>
+    <div class="details" id="jobPortalDetails" style="display: none;">
+        <p><strong>GitHub Repository:</strong> <a href="https://github.com/Dhinesh-Developer/JOB_PORTAL/tree/main" target="_blank">View Source Code</a></p>
+        <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript, Bootstrap, JDBC, J2EE, JSP, Servlets, Hibernate, Spring MVC, MySQL, H2 Database, DAO Design Pattern.</p>
+        <p><strong>Features:</strong></p>
+        <ul>
+            <li>Job listings and filters for users to view available jobs.</li>
+            <li>Form for applying to jobs directly via the portal.</li>
+            <li>Company-specific job applications, allowing applicants to apply to specific companies and positions.</li>
+            <li>User registration and login system.</li>
+            <li>Admin panel for managing job listings and applications.</li>
+        </ul>
+        <button class="btn btn-info" onclick="toggleDescription('jobPortalDescription')">View Details</button>
+        <div id="jobPortalDescription" style="display: none; margin-top: 10px;">
+            <div class="container">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Section</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Overview</strong></td>
+                            <td>The Job Portal is designed to help users find and apply for jobs, while allowing companies to post their job vacancies.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Backend</strong></td>
+                            <td>Built using Java (JDBC, Servlets, JSP, Hibernate, Spring MVC) and integrated with a MySQL/H2 database to manage job listings, user registrations, and applications.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Frontend</strong></td>
+                            <td>Developed using HTML, CSS, JavaScript, and Bootstrap to provide an intuitive and responsive user interface.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Database</strong></td>
+                            <td>
+                                <ul>
+                                    <li><strong>User Table:</strong> userId, username, password, email, phoneNumber, role.</li>
+                                    <li><strong>Job Table:</strong> jobId, companyName, jobTitle, description, location, salary, postedDate.</li>
+                                    <li><strong>Application Table:</strong> applicationId, userId (Foreign Key), jobId (Foreign Key), applicationStatus.</li>
+                                    <li><strong>Company Table:</strong> companyId, companyName, companyDescription, contactDetails.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <!-- GitHub Repository -->
+                        <tr>
+                            <td><strong>GitHub Repository</strong></td>
+                            <td><a href="https://github.com/Dhinesh-Developer/JOB_PORTAL/tree/main" target="_blank">View the source code on GitHub</a></td>
+                        </tr>
+
+                        <!-- YouTube Demo -->
+                        <tr>
+                            <td><strong>Live Demo on YouTube</strong></td>
+                            <td><a href="https://www.youtube.com/watch?v=h4Xdw9kJx5I&t=87s" target="_blank">Watch the walkthrough on YouTube</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleDetails(id) {
+        const details = document.getElementById(id);
+        details.style.display = (details.style.display === "none" || details.style.display === "") ? "block" : "none";
+    }
+
+    function toggleDescription(id) {
+        const description = document.getElementById(id);
+        description.style.display = (description.style.display === "none" || description.style.display === "") ? "block" : "none";
+    }
+</script>
+
+<!-- Project: DK's Shopping Mart -->
+<div class="project-item">
+    <h4>DK's Shopping Mart</h4>
+    <p>A feature-rich e-commerce platform offering a seamless shopping experience with advanced functionalities like product search, cart management, and secure checkout.</p>
+    <p><strong>YouTube Link:</strong> <a href="https://www.youtube.com/watch?v=mxIsUyh_IZo" target="_blank">Watch Here</a></p>
+    <button class="btn btn-primary" onclick="toggleDetails('skShoppingMartDetails')">Know More</button>
+    <div class="details" id="skShoppingMartDetails" style="display: none;">
+        <p><strong>GitHub Repository:</strong> <a href="https://github.com/YourGitHubAccount/SKs_Shopping_Mart" target="_blank">View Source Code</a></p>
+        <p><strong>Technologies Used:</strong> HTML, CSS, Bootstrap, JavaScript, JDBC, J2EE, JSP, Servlets, MySQL, Hibernate, Spring MVC.</p>
+        <p><strong>Features:</strong></p>
+        <ul>
+            <li>Advanced product search and filters.</li>
+            <li>Shopping cart with dynamic price updates.</li>
+            <li>Secure login and signup functionality.</li>
+            <li>Integrated payment gateway simulation.</li>
+            <li>Product ratings and reviews system.</li>
+        </ul>
+        <button class="btn btn-info" onclick="toggleDescription('skShoppingMartDescription')">View Details</button>
+        <div id="skShoppingMartDescription" style="display: none; margin-top: 10px;">
+            <div class="container">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Section</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Overview</strong></td>
+                            <td>SK's Shopping Mart is an innovative e-commerce platform inspired by popular online marketplaces, featuring a responsive design and scalable architecture.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Backend</strong></td>
+                            <td>Built with Java technologies (JDBC, Servlets, JSP) and integrated with a MySQL database for storing user and product data.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Frontend</strong></td>
+                            <td>Developed with HTML, CSS, Bootstrap, and JavaScript for a modern and user-friendly interface.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Database</strong></td>
+                            <td>
+                                <ul>
+                                    <li><strong>Users Table:</strong> userId, username, password, email, phone.</li>
+                                    <li><strong>Products Table:</strong> productId, name, price, description, rating.</li>
+                                    <li><strong>Orders Table:</strong> orderId, userId, productId, orderDate, totalPrice.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                         <!-- GitHub Repository -->
+                         <tr>
+                            <td><strong>GitHub Repository</strong></td>
+                            <td><a href="https://github.com/Dhinesh-Developer/DK_SOLUTIONS/tree/main" target="_blank">View the source code on GitHub</a></td>
+                        </tr>
+
+                        <!-- YouTube Demo -->
+                        <tr>
+                            <td><strong>Live Demo on YouTube</strong></td>
+                            <td><a href="https://www.youtube.com/watch?v=mxIsUyh_IZo" target="_blank">Watch the walkthrough on YouTube</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleDetails(id) {
+        const details = document.getElementById(id);
+        details.style.display = (details.style.display === "none" || details.style.display === "") ? "block" : "none";
+    }
+
+    function toggleDescription(id) {
+        const description = document.getElementById(id);
+        description.style.display = (description.style.display === "none" || description.style.display === "") ? "block" : "none";
+    }
+</script>
+
+<!-- Project: DK's Search Engine -->
+<div class="project-item">
+    <h4>DK's Search Engine</h4>
+    <p>A web-based **Search Engine** exclusively developed for DK Institute. It allows users to search for over 500 official websites and redirects them to the official websites' homepage directly.</p>
+    <p><strong>YouTube Link:</strong> <a href="https://www.youtube.com/watch?v=nd5BVeHq1Qg&t=1s" target="_blank">Watch Here</a></p>
+    <button class="btn btn-primary" onclick="toggleDetails('searchEngineDetails')">Know More</button>
+    <div class="details" id="searchEngineDetails" style="display: none;">
+        <p><strong>GitHub Repository:</strong> <a href="https://github.com/Dhinesh-Developer/DK_SEARCH_ENGINE/tree/main" target="_blank">View Source Code</a></p>
+        <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript, Bootstrap, JDBC, J2EE, JSP, Servlets, Hibernate, Spring MVC, MySQL, H2 Database, Postman, etc.</p>
+        <p><strong>Features:</strong></p>
+        <ul>
+            <li>Search over 500 official websites and get direct access to their homepage.</li>
+            <li>Simple and intuitive search interface for users to enter search terms.</li>
+            <li>Redirect users to the official website links like YouTube, Facebook, etc.</li>
+            <li>Admin panel for managing website links and ensuring they are up to date.</li>
+        </ul>
+        <button class="btn btn-info" onclick="toggleDescription('searchEngineDescription')">View Details</button>
+        <div id="searchEngineDescription" style="display: none; margin-top: 10px;">
+            <div class="container">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Section</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Overview</strong></td>
+                            <td>The DK’s Search Engine provides users with the ability to search for official websites, taking them directly to the homepage of over 500 websites.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Backend</strong></td>
+                            <td>Built using Java (JDBC, Servlets, JSP, Hibernate, Spring MVC) and integrated with a MySQL/H2 database to store and retrieve website links.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Frontend</strong></td>
+                            <td>Developed using HTML, CSS, JavaScript, and Bootstrap for a responsive and user-friendly design.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Database</strong></td>
+                            <td>
+                                <ul>
+                                    <li><strong>Website Links Table:</strong> linkId, websiteName, url.</li>
+                                    <li><strong>Search History Table:</strong> searchId, searchQuery, searchTimestamp.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>GitHub Repository</strong></td>
+                            <td><a href="https://github.com/Dhinesh-Developer/DK_SEARCH_ENGINE/tree/main" target="_blank">View the source code on GitHub</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Live Demo on YouTube</strong></td>
+                            <td><a href="https://www.youtube.com/watch?v=nd5BVeHq1Qg&t=1s" target="_blank">Watch the walkthrough on YouTube</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleDetails(id) {
+        const details = document.getElementById(id);
+        details.style.display = (details.style.display === "none" || details.style.display === "") ? "block" : "none";
+    }
+
+    function toggleDescription(id) {
+        const description = document.getElementById(id);
+        description.style.display = (description.style.display === "none" || description.style.display === "") ? "block" : "none";
+    }
+</script>
+
+<!-- Project: DK's Coding Platform -->
+<div class="project-item">
+    <h4>DK's Coding Platform</h4>
+    <p>A web-based **coding platform** developed for DK Institute, designed to help users practice coding problems, participate in contests, and enhance their programming skills. It supports multiple coding languages, including Java, Python, and C++.</p>
+    <p><strong>YouTube Link:</strong> <a href="https://www.youtube.com/watch?v=vpLkG5J8oQo" target="_blank">Watch Here</a></p>
+    <button class="btn btn-primary" onclick="toggleDetails('codingPlatformDetails')">Know More</button>
+    <div class="details" id="codingPlatformDetails" style="display: none;">
+        <p><strong>GitHub Repository:</strong> <a href="https://github.com/Dhinesh-Developer/CODING_PLATFORM/tree/main" target="_blank">View Source Code</a></p>
+        <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript, Bootstrap, JSP, JDBC, Spring MVC, Servlets, MySQL, Postman, etc.</p>
+        <p><strong>Features:</strong></p>
+        <ul>
+            <li>Practice coding problems in multiple programming languages (Java, Python, C++).</li>
+            <li>Participate in coding contests with real-time scoring and rankings.</li>
+            <li>Code editor with syntax highlighting, code execution, and output viewing.</li>
+            <li>User profiles to track coding progress, solved problems, and contest results.</li>
+            <li>Admin panel to manage problems, contests, and users.</li>
+        </ul>
+        <button class="btn btn-info" onclick="toggleDescription('codingPlatformDescription')">View Details</button>
+        <div id="codingPlatformDescription" style="display: none; margin-top: 10px;">
+            <div class="container">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Section</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Overview</strong></td>
+                            <td>DK’s Coding Platform is a comprehensive coding environment for practicing problems, participating in contests, and enhancing problem-solving skills in various languages.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Backend</strong></td>
+                            <td>Built using Java (JDBC, Servlets, JSP, Spring MVC) and MySQL database for storing user profiles, coding problems, contest results, etc.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Frontend</strong></td>
+                            <td>Developed using HTML, CSS, JavaScript, and Bootstrap to provide a responsive, user-friendly interface.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Database</strong></td>
+                            <td>
+                                <ul>
+                                    <li><strong>Users Table:</strong> userId, username, email, password, solvedProblems, rating.</li>
+                                    <li><strong>Problems Table:</strong> problemId, problemTitle, problemDescription, inputFormat, outputFormat, difficultyLevel.</li>
+                                    <li><strong>Contests Table:</strong> contestId, contestTitle, startDate, endDate, problemsCount.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>GitHub Repository</strong></td>
+                            <td><a href="https://github.com/Dhinesh-Developer/CODING_PLATFORM/tree/main" target="_blank">View the source code on GitHub</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Live Demo on YouTube</strong></td>
+                            <td><a href="https://www.youtube.com/watch?v=vpLkG5J8oQo" target="_blank">Watch the walkthrough on YouTube</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleDetails(id) {
+        const details = document.getElementById(id);
+        details.style.display = (details.style.display === "none" || details.style.display === "") ? "block" : "none";
+    }
+
+    function toggleDescription(id) {
+        const description = document.getElementById(id);
+        description.style.display = (description.style.display === "none" || description.style.display === "") ? "block" : "none";
+    }
+</script>
+
+
+<!-- Project: College Management System -->
+<div class="project-item">
+    <h4>College Management System</h4>
+    <p>A comprehensive web-based College Management System to manage various aspects of student, staff, and college administration, developed for **DK Institute of Technology**.</p>
+    <p><strong>YouTube Link:</strong> <a href="https://www.youtube.com/watch?v=5IChLrZge58" target="_blank">Watch Here</a></p>
+    <button class="btn btn-primary" onclick="toggleDetails('collegeManagementDetails')">Know More</button>
+    <div class="details" id="collegeManagementDetails" style="display: none;">
+        <p><strong>GitHub Repository:</strong> <a href="https://github.com/Dhinesh-Developer/COLLEGE_MANAGEMENT_SYSTEM/tree/main" target="_blank">View Source Code</a></p>
+        <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript, Bootstrap, JDBC, J2EE, JSP, Servlets, MySQL, H2 Database.</p>
+        <p><strong>Features:</strong></p>
+        <ul>
+            <li>Staff management with detailed information.</li>
+            <li>Student admission and fee management.</li>
+            <li>Bus route management for student transportation.</li>
+            <li>Real-time tracking of trending technologies in teaching.</li>
+            <li>Admission forms and documentation management.</li>
+        </ul>
+        <button class="btn btn-info" onclick="toggleDescription('collegeManagementDescription')">View Details</button>
+        <div id="collegeManagementDescription" style="display: none; margin-top: 10px;">
+            <div class="container">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Section</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Overview</strong></td>
+                            <td>The College Management System is designed to streamline the administrative and operational activities of DK Institute of Technology.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Backend</strong></td>
+                            <td>Built using Java (JDBC, Servlets, JSP) and integrated with a MySQL/H2 database to manage data related to students, staff, and college resources.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Frontend</strong></td>
+                            <td>Developed using HTML, CSS, Bootstrap, and JavaScript to provide an intuitive and responsive user interface.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Database</strong></td>
+                            <td>
+                                <ul>
+                                    <li><strong>Student Table:</strong> studentId, firstName, lastName, dateOfBirth, department, feesPaid.</li>
+                                    <li><strong>Staff Table:</strong> staffId, name, department, designation, contactDetails.</li>
+                                    <li><strong>Bus Table:</strong> busId, route, departureTime, arrivalTime, availableSeats.</li>
+                                    <li><strong>Admission Table:</strong> admissionId, studentId, course, status.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <!-- GitHub Repository -->
+                        <tr>
+                            <td><strong>GitHub Repository</strong></td>
+                            <td><a href="https://github.com/Dhinesh-Developer/COLLEGE_MANAGEMENT_SYSTEM/tree/main" target="_blank">View the source code on GitHub</a></td>
+                        </tr>
+
+                        <!-- YouTube Demo -->
+                        <tr>
+                            <td><strong>Live Demo on YouTube</strong></td>
+                            <td><a href="https://www.youtube.com/watch?v=5IChLrZge58" target="_blank">Watch the walkthrough on YouTube</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleDetails(id) {
+        const details = document.getElementById(id);
+        details.style.display = (details.style.display === "none" || details.style.display === "") ? "block" : "none";
+    }
+
+    function toggleDescription(id) {
+        const description = document.getElementById(id);
+        description.style.display = (description.style.display === "none" || description.style.display === "") ? "block" : "none";
+    }
+</script>
+
+<!-- Project: Library Management System -->
+<div class="project-item">
+    <h4>Library Management System</h4>
+    <p>A web-based **Library Management System** designed to manage book details, track book availability, and provide a platform for users to borrow or return books. The system supports functionalities like adding new books, viewing available books, managing copies, and tracking borrowed books.</p>
+    <p><strong>YouTube Link:</strong> <a href="https://www.youtube.com/watch?v=b26T8JFV5Cw" target="_blank">Watch Here</a></p>
+    <button class="btn btn-primary" onclick="toggleDetails('librarySystemDetails')">Know More</button>
+    <div class="details" id="librarySystemDetails" style="display: none;">
+        <p><strong>GitHub Repository:</strong> <a href="https://github.com/Dhinesh-Developer/Library-Management-System" target="_blank">View Source Code</a></p>
+        <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript, Bootstrap, JSP, JDBC, J2EE, Servlets, MySQL, H2, Postman, etc.</p>
+        <p><strong>Features:</strong></p>
+        <ul>
+            <li>Add new books to the library database.</li>
+            <li>View details of available books with information like title, author, genre, and availability.</li>
+            <li>Track the number of copies available for each book.</li>
+            <li>User profiles to track borrowed books and due dates.</li>
+            <li>Admin panel to manage books, user accounts, and track transactions.</li>
+        </ul>
+        <button class="btn btn-info" onclick="toggleDescription('librarySystemDescription')">View Details</button>
+        <div id="librarySystemDescription" style="display: none; margin-top: 10px;">
+            <div class="container">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Section</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Overview</strong></td>
+                            <td>The Library Management System allows users to manage books in a library, track availability, and manage user borrowing and returning activities.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Backend</strong></td>
+                            <td>Developed using Java (JDBC, Servlets, JSP, J2EE) and MySQL or H2 database for storing book details, user information, and transaction records.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Frontend</strong></td>
+                            <td>Created using HTML, CSS, JavaScript, and Bootstrap for a responsive and user-friendly interface.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Database</strong></td>
+                            <td>
+                                <ul>
+                                    <li><strong>Books Table:</strong> bookId, title, author, genre, totalCopies, availableCopies.</li>
+                                    <li><strong>Users Table:</strong> userId, username, email, password, borrowedBooks, dueDate.</li>
+                                    <li><strong>Transactions Table:</strong> transactionId, userId, bookId, borrowDate, returnDate.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>GitHub Repository</strong></td>
+                            <td><a href="https://github.com/Dhinesh-Developer/Library-Management-System" target="_blank">View the source code on GitHub</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Live Demo on YouTube</strong></td>
+                            <td><a href="https://www.youtube.com/watch?v=b26T8JFV5Cw" target="_blank">Watch the walkthrough on YouTube</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleDetails(id) {
+        const details = document.getElementById(id);
+        details.style.display = (details.style.display === "none" || details.style.display === "") ? "block" : "none";
+    }
+
+    function toggleDescription(id) {
+        const description = document.getElementById(id);
+        description.style.display = (description.style.display === "none" || description.style.display === "") ? "block" : "none";
+    }
+</script>
+
+<!-- Project: DK's Movie Booking App -->
+<div class="project-item">
+    <h4>DK's Movie Booking App</h4>
+    <p>A web-based **Movie Booking App** designed to allow users to view movies, select showtimes, and book tickets. The system supports features like viewing movie details, booking tickets, and handling user sessions and cookies to track the user's booking history and login status.</p>
+    <p><strong>YouTube Link:</strong> <a href="https://www.youtube.com/watch?v=Ez6Cm533KPc&t=1s" target="_blank">Watch Here</a></p>
+    <button class="btn btn-primary" onclick="toggleDetails('movieBookingAppDetails')">Know More</button>
+    <div class="details" id="movieBookingAppDetails" style="display: none;">
+        <p><strong>GitHub Repository:</strong> <a href="https://github.com/Dhinesh-Developer/Movie-Booking/tree/main" target="_blank">View Source Code</a></p>
+        <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript, Bootstrap, JSP, JDBC, J2EE, Servlets, MySQL, Session Management, Cookies, etc.</p>
+        <p><strong>Features:</strong></p>
+        <ul>
+            <li>View movies with details such as title, genre, duration, and showtimes.</li>
+            <li>Book movie tickets with seat selection and payment options.</li>
+            <li>Handle user sessions to manage bookings and login status.</li>
+            <li>Set and manage cookies to store user preferences and viewing history.</li>
+            <li>Admin panel to manage movies, showtimes, and user bookings.</li>
+        </ul>
+        <button class="btn btn-info" onclick="toggleDescription('movieBookingAppDescription')">View Details</button>
+        <div id="movieBookingAppDescription" style="display: none; margin-top: 10px;">
+            <div class="container">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Section</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Overview</strong></td>
+                            <td>DK's Movie Booking App provides users with an intuitive platform to book movie tickets online. The app allows users to select showtimes, choose seats, and manage their booking history using sessions and cookies.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Backend</strong></td>
+                            <td>Developed using Java (JDBC, Servlets, JSP, J2EE) and MySQL for managing movie data, user information, and booking transactions.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Frontend</strong></td>
+                            <td>Built using HTML, CSS, JavaScript, and Bootstrap for a responsive and attractive user interface.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Session & Cookies Management</strong></td>
+                            <td>
+                                <ul>
+                                    <li><strong>Sessions:</strong> Used to track the user's login status and manage active sessions. Users can log in and the system will remember their preferences throughout the browsing session.</li>
+                                    <li><strong>Cookies:</strong> Cookies are set to remember users' preferences such as selected seats and favorite movies, even after the session ends.</li>
+                                    <li><strong>Example Code for Session Handling:</strong><br>
+                                    ```java<br>
+                                    HttpSession session = request.getSession();<br>
+                                    session.setAttribute("user", username);<br>
+                                    ```</li>
+                                    <li><strong>Example Code for Cookies:</strong><br>
+                                    ```java<br>
+                                    Cookie userCookie = new Cookie("username", username);<br>
+                                    userCookie.setMaxAge(60*60*24); // 1 day<br>
+                                    response.addCookie(userCookie);<br>
+                                    ```</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Database</strong></td>
+                            <td>
+                                <ul>
+                                    <li><strong>Movies Table:</strong> movieId, title, genre, duration, showtime, rating.</li>
+                                    <li><strong>Users Table:</strong> userId, username, email, password, userBookings.</li>
+                                    <li><strong>Bookings Table:</strong> bookingId, userId, movieId, showtime, seatsBooked.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>GitHub Repository</strong></td>
+                            <td><a href="https://github.com/Dhinesh-Developer/Movie-Booking/tree/main" target="_blank">View the source code on GitHub</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Live Demo on YouTube</strong></td>
+                            <td><a href="https://www.youtube.com/watch?v=Ez6Cm533KPc&t=1s" target="_blank">Watch the walkthrough on YouTube</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleDetails(id) {
+        const details = document.getElementById(id);
+        details.style.display = (details.style.display === "none" || details.style.display === "") ? "block" : "none";
+    }
+
+    function toggleDescription(id) {
+        const description = document.getElementById(id);
+        description.style.display = (description.style.display === "none" || description.style.display === "") ? "block" : "none";
+    }
+</script>
+<!-- Project: DK's Train Management System -->
+<div class="project-item">
+    <h4>DK's Train Management System</h4>
+    <p>A web-based **Train Management System** designed to help users view available trains, check seat availability, and book tickets online. The system also supports features like train details, booking tickets, and managing user sessions and cookies for a personalized experience.</p>
+    <p><strong>YouTube Link:</strong> <a href="" target="_blank">Watch Here</a></p>
+    <button class="btn btn-primary" onclick="toggleDetails('trainManagementSystemDetails')">Know More</button>
+    <div class="details" id="trainManagementSystemDetails" style="display: none;">
+        <p><strong>GitHub Repository:</strong> <a href="hhttps://github.com/Dhinesh-Developer/DK-s_TRAIN_MANAGEMENT/tree/main" target="_blank">View Source Code</a></p>
+        <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript, Bootstrap, JSP, JDBC, J2EE, Servlets, MySQL, Session Management, Cookies, etc.</p>
+        <p><strong>Features:</strong></p>
+        <ul>
+            <li>View trains with details such as train number, route, available seats, and timings.</li>
+            <li>Book train tickets with seat selection and payment options.</li>
+            <li>Manage user sessions to track bookings and login status.</li>
+            <li>Set and manage cookies to store user preferences and previous bookings.</li>
+            <li>Admin panel to manage train details, bookings, and schedules.</li>
+        </ul>
+        <button class="btn btn-info" onclick="toggleDescription('trainManagementSystemDescription')">View Details</button>
+        <div id="trainManagementSystemDescription" style="display: none; margin-top: 10px;">
+            <div class="container">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Section</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Overview</strong></td>
+                            <td>DK's Train Management System provides users with an efficient platform to book train tickets online. The system allows users to view available trains, check seat availability, and manage their bookings using sessions and cookies.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Backend</strong></td>
+                            <td>Developed using Java (JDBC, Servlets, JSP, J2EE) and MySQL for managing train data, user information, and booking transactions.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Frontend</strong></td>
+                            <td>Built using HTML, CSS, JavaScript, and Bootstrap for a responsive and user-friendly interface.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Session & Cookies Management</strong></td>
+                            <td>
+                                <ul>
+                                    <li><strong>Sessions:</strong> Sessions are used to manage user login status and track active bookings. Once logged in, the system remembers the user's preferences during the session.</li>
+                                    <li><strong>Cookies:</strong> Cookies are used to store user preferences like selected trains and previous bookings, even after the session ends.</li>
+                                    <li><strong>Example Code for Session Handling:</strong><br>
+                                    ```java<br>
+                                    HttpSession session = request.getSession();<br>
+                                    session.setAttribute("user", username);<br>
+                                    ```</li>
+                                    <li><strong>Example Code for Cookies:</strong><br>
+                                    ```java<br>
+                                    Cookie userCookie = new Cookie("username", username);<br>
+                                    userCookie.setMaxAge(60*60*24); // 1 day<br>
+                                    response.addCookie(userCookie);<br>
+                                    ```</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Database</strong></td>
+                            <td>
+                                <ul>
+                                    <li><strong>Trains Table:</strong> trainId, trainNumber, route, availableSeats, schedule, and timings.</li>
+                                    <li><strong>Users Table:</strong> userId, username, email, password, userBookings.</li>
+                                    <li><strong>Bookings Table:</strong> bookingId, userId, trainId, seatNumber, bookingDate.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>GitHub Repository</strong></td>
+                            <td><a href="https://github.com/Dhinesh-Developer/DK-s_TRAIN_MANAGEMENT/tree/main" target="_blank">View the source code on GitHub</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Live Demo on YouTube</strong></td>
+                            <td><a href="" target="_blank">Watch the walkthrough on YouTube</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleDetails(id) {
+        const details = document.getElementById(id);
+        details.style.display = (details.style.display === "none" || details.style.display === "") ? "block" : "none";
+    }
+
+    function toggleDescription(id) {
+        const description = document.getElementById(id);
+        description.style.display = (description.style.display === "none" || description.style.display === "") ? "block" : "none";
+    }
+</script>
+
+<!-- Project: DK's Real-Time Chat Application -->
+<div class="project-item">
+    <h4>DK's Real-Time Chat Application</h4>
+    <p>A **Real-Time Chat Application** that enables users to send and receive messages instantly, create chat rooms, and support direct messaging. The application utilizes WebSockets for real-time communication and includes user authentication, private and group chats, and persistent message storage.</p>
+    <p><strong>YouTube Link:</strong> <a href="https://www.youtube.com/watch?v=8eMDrxZBNhU&t=42s" target="_blank">Watch Here</a></p>
+    <button class="btn btn-primary" onclick="toggleDetails('chatAppDetails')">Know More</button>
+    <div class="details" id="chatAppDetails" style="display: none;">
+        <p><strong>GitHub Repository:</strong> <a href="https://github.com/Dhinesh-Developer/JSP/tree/main/chat%20applications" target="_blank">View Source Code</a></p>
+        <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript, Bootstrap, JSP, JDBC, J2EE, MySQL, H2, WebSockets, Postman, etc.</p>
+        <p><strong>Features:</strong></p>
+        <ul>
+            <li>Real-time messaging with WebSocket support.</li>
+            <li>Private and group chat functionality.</li>
+            <li>Message persistence in the database for user history.</li>
+            <li>User authentication with session management.</li>
+            <li>Admin panel to manage users and chat rooms.</li>
+        </ul>
+        <button class="btn btn-info" onclick="toggleDescription('chatAppDescription')">View Details</button>
+        <div id="chatAppDescription" style="display: none; margin-top: 10px;">
+            <div class="container">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Section</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Overview</strong></td>
+                            <td>DK's Real-Time Chat Application allows users to chat in real-time through both private and group messages. It uses WebSockets for live updates and supports message persistence using databases.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Backend</strong></td>
+                            <td>Developed using Java (JDBC, Servlets, JSP, J2EE) and WebSocket technology for real-time messaging. MySQL and H2 databases are used to store user data and message history.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Frontend</strong></td>
+                            <td>Built with HTML, CSS, JavaScript, and Bootstrap to create a modern, responsive chat interface.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Real-Time Communication</strong></td>
+                            <td>
+                                <ul>
+                                    <li><strong>WebSockets:</strong> Used for establishing persistent connections for real-time messaging.</li>
+                                    <li><strong>Private & Group Chats:</strong> Users can send and receive messages in private or group chats.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Session Management</strong></td>
+                            <td>
+                                <ul>
+                                    <li><strong>Sessions:</strong> Used for managing user authentication and ensuring secure chat rooms.</li>
+                                    <li><strong>Cookies:</strong> Used to store user preferences and login status.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Database</strong></td>
+                            <td>
+                                <ul>
+                                    <li><strong>Users Table:</strong> userId, username, email, password.</li>
+                                    <li><strong>Messages Table:</strong> messageId, senderId, receiverId, groupId, messageText, timestamp.</li>
+                                    <li><strong>ChatRooms Table:</strong> roomId, roomName, createdBy, userCount.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Postman</strong></td>
+                            <td>Used for testing API endpoints for user authentication, message sending, and chat room management.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>GitHub Repository</strong></td>
+                            <td><a href="https://github.com/Dhinesh-Developer/JSP/tree/main/chat%20applications" target="_blank">View the source code on GitHub</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Live Demo on YouTube</strong></td>
+                            <td><a href="https://www.youtube.com/watch?v=8eMDrxZBNhU&t=42s" target="_blank">Watch the walkthrough on YouTube</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleDetails(id) {
+        const details = document.getElementById(id);
+        details.style.display = (details.style.display === "none" || details.style.display === "") ? "block" : "none";
+    }
+
+    function toggleDescription(id) {
+        const description = document.getElementById(id);
+        description.style.display = (description.style.display === "none" || description.style.display === "") ? "block" : "none";
+    }
+</script>
 
     <!-- Project 1: FoodApp_DK -->
 <div class="project-item">
@@ -231,6 +1308,99 @@
 
     function toggleDescription(descriptionId) {
         const description = document.getElementById(descriptionId);
+        description.style.display = (description.style.display === "none" || description.style.display === "") ? "block" : "none";
+    }
+</script>
+<!-- Project: Ship Management System -->
+<div class="project-item">
+    <h4>Ship Management System</h4>
+    <p>A **Ship Management System** that helps manage the details of ships, including their cargo, schedules, and maintenance. The system provides an interface for administrators to add, update, and delete ship records, monitor cargo status, and schedule maintenance tasks. The application uses a dynamic web interface with real-time updates for ship status and schedule.</p>
+    <p><strong>YouTube Link:</strong> <a href="hhttps://www.youtube.com/watch?v=MUrxeQkvayk" target="_blank">Watch Here</a></p>
+    <button class="btn btn-primary" onclick="toggleDetails('shipAppDetails')">Know More</button>
+    <div class="details" id="shipAppDetails" style="display: none;">
+        <p><strong>GitHub Repository:</strong> <a href="https://github.com/Dhinesh-Developer/JSP/blob/main" target="_blank">View Source Code</a></p>
+        <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript, Bootstrap, JSP, JDBC, J2EE, Servlets, MySQL, etc.</p>
+        <p><strong>Features:</strong></p>
+        <ul>
+            <li>Manage ship records, including ship name, type, capacity, and crew.</li>
+            <li>Track cargo and its status (loaded, in transit, delivered).</li>
+            <li>Schedule maintenance tasks for ships and track their completion status.</li>
+            <li>Real-time updates on ship locations and schedules.</li>
+            <li>Admin panel to manage ship records, cargo, and maintenance schedules.</li>
+        </ul>
+        <button class="btn btn-info" onclick="toggleDescription('shipAppDescription')">View Details</button>
+        <div id="shipAppDescription" style="display: none; margin-top: 10px;">
+            <div class="container">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Section</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Overview</strong></td>
+                            <td>The Ship Management System helps administrators efficiently manage ships, their cargo, schedules, and maintenance tasks. The system is designed to ensure seamless tracking and real-time updates.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Backend</strong></td>
+                            <td>Developed using Java (JDBC, Servlets, JSP, J2EE) to handle business logic, database operations, and user interactions. The application uses MySQL for storing ship details, cargo status, maintenance schedules, and other related data.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Frontend</strong></td>
+                            <td>Built with HTML, CSS, JavaScript, and Bootstrap for a responsive and user-friendly interface. The frontend provides options for administrators to interact with ship records and manage tasks.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Database</strong></td>
+                            <td>
+                                <ul>
+                                    <li><strong>Ships Table:</strong> shipId, shipName, shipType, capacity, crew, status.</li>
+                                    <li><strong>Cargo Table:</strong> cargoId, shipId, cargoName, cargoType, status, weight.</li>
+                                    <li><strong>Maintenance Table:</strong> maintenanceId, shipId, maintenanceTask, dateScheduled, status.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Session Management</strong></td>
+                            <td>
+                                <ul>
+                                    <li><strong>Sessions:</strong> Used for managing user authentication and ensuring secure access to the ship management interface.</li>
+                                    <li><strong>Cookies:</strong> Used to store user preferences and login information for a seamless experience.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Real-Time Updates</strong></td>
+                            <td>Use of AJAX for dynamic updates in the user interface, allowing administrators to track the real-time status of ships, cargo, and maintenance schedules.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Postman</strong></td>
+                            <td>Used for testing API endpoints for CRUD operations on ship data, cargo, and maintenance tasks.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>GitHub Repository</strong></td>
+                            <td><a href="https://github.com/Dhinesh-Developer/JSP/blob/main" target="_blank">View the source code on GitHub</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Live Demo on YouTube</strong></td>
+                            <td><a href="hhttps://www.youtube.com/watch?v=MUrxeQkvayk" target="_blank">Watch the walkthrough on YouTube</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleDetails(id) {
+        const details = document.getElementById(id);
+        details.style.display = (details.style.display === "none" || details.style.display === "") ? "block" : "none";
+    }
+
+    function toggleDescription(id) {
+        const description = document.getElementById(id);
         description.style.display = (description.style.display === "none" || description.style.display === "") ? "block" : "none";
     }
 </script>
